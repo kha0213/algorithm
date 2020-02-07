@@ -4,21 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Lv1_완주하지못한선수_200207 {
-	
-//	public String solution(String[] participant, String[] completion) {
-//        Arrays.sort(participant);
-//        Arrays.sort(completion);
-//        for(int i=0;i<completion.length;i++) {
-//        	if(!participant[i].equals(participant[i])) {
-//        		return participant[i];
-//        	}
-//        }
-//        
-//		
-//        return participant[participant.length-1];
-//    }
-	
-	
+		
 	public String solution1(String[] participant, String[] completion) {
         ArrayList<String> pa = new ArrayList<String>(Arrays.asList(participant));
         ArrayList<String> co = new ArrayList<String>(Arrays.asList(completion));
