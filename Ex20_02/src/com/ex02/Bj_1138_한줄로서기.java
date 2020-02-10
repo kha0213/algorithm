@@ -3,7 +3,7 @@ package com.ex02;
 
 import java.util.Scanner;
 
-public class bj_1138_한줄로서기 {
+public class Bj_1138_한줄로서기 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
