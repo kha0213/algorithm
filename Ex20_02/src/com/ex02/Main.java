@@ -1,54 +1,44 @@
 package com.ex02;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.StringTokenizer;
+import java.util.Stack;
 
 public class Main {
-    public static void main(String[] args) {
-        try {
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            int N = Integer.parseInt(br.readLine());
-            int[][] conference = new int[N][2];
+		public static void main(String[] args) {
+			char a = 'A'; //65 //78
+			char z = 'Z'; //90
+			
+			System.out.println(a+1-1);
+			System.out.println(z+1-1);
+		}
+		
+		
+		public int solution(String name) {
+				char[] ch = name.toCharArray();
+				int answer=0;
+				int cnt=0;
+								
+				for(int i=1;i<ch.length;i++) {
+					if(ch[i]=='A') {
+						cnt++;
+					}else {
+						break;
+					}
+				}
+				for(int i=0;i<ch.length;i++) {
+					if(ch[i]<=78) {
+						answer+=ch[i]-65;
+					}else {
+						answer+=91-ch[i];
+					}
+				}
+				
+				answer-=cnt;
 
-            StringTokenizer st = null;
-            for (int i = 0; i < N; i++) {
-                st = new StringTokenizer(br.readLine());
+		        answer+=ch.length-1;
+				
+		        return answer;
+		}
+	
 
-                for (int j = 0; j < 2; j++) {
-                    conference[i][j] = Integer.parseInt(st.nextToken());
-                }
-            }
-
-            Arrays.sort(conference, new Comparator<int[]>() {
-
-                @Override
-                public int compare(int[] o1, int[] o2) {
-                    if(o1[1]==o2[1]) {
-                    	return o1[0]-o2[0];
-                    }
-                    
-                    return o1[1] - o2[1];
-                }
-            });
-            int cnt = 1;
-            int temp = conference[0][1];
-            for (int i = 1; i < N; i++) {
-                if (conference[i][0] < temp) {
-
-                } else {
-                    cnt++;
-                    temp = conference[i][1];
-                }
-            }
-            System.out.println(cnt);
-            br.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
