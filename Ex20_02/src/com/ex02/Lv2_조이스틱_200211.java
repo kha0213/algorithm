@@ -13,12 +13,14 @@ public class Lv2_¡∂¿ÃΩ∫∆Ω_200211 {
 		char[] ch = name.toCharArray();
 		int answer = 0;
 		int cnt = 0;
-
-		for (int i = 0; i < ch.length; i++) {
+		int maxCnt =0;
+		for (int i = 1; i < ch.length; i++) {
 			if (ch[i] == 'A') {
 				cnt++;
 			} else {
-				break;
+				if(i-cnt<cnt) {
+					
+				}
 			}
 		}
 		for (int i = 0; i < ch.length; i++) {
@@ -28,7 +30,7 @@ public class Lv2_¡∂¿ÃΩ∫∆Ω_200211 {
 				answer += 91 - ch[i];
 			}
 		}
-
+		// BAAAABBA
 		// BBAAAAB;
 
 		answer -= cnt;
