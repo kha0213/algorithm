@@ -2,7 +2,7 @@ package com.ex02;
 
 import java.util.Scanner;
 
-public class Bj_2985_¼¼¼ö {
+public class Bj_2985_ì„¸ìˆ˜ {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();

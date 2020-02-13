@@ -2,7 +2,7 @@ package com.ex02;
 
 import java.util.Scanner;
 
-public class Bj_2753_À±³â {
+public class Bj_2753_ìœ¤ë…„ {
 
 	
 			public static void main(String[] args) {

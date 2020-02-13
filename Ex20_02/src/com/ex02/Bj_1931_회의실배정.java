@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class Bj_1931_ȸ�ǽǹ��� {
+public class Bj_1931_회의실배정 {
 	 public static void main(String[] args) {
 	        try {
 

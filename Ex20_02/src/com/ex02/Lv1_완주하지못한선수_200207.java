@@ -3,7 +3,7 @@ package com.ex02;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Lv1_¿ÏÁÖÇÏÁö¸øÇÑ¼±¼ö_200207 {
+public class Lv1_ì™„ì£¼í•˜ì§€ëª»í•œì„ ìˆ˜_200207 {
 		
 	public String solution1(String[] participant, String[] completion) {
         ArrayList<String> pa = new ArrayList<String>(Arrays.asList(participant));

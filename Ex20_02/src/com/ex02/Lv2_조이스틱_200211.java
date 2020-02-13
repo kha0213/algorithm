@@ -1,6 +1,6 @@
 package com.ex02;
 
-public class Lv2_Á¶ÀÌ½ºÆ½_200211 {
+public class Lv2_ì¡°ì´ìŠ¤í‹±_200211 {
 	public static void main(String[] args) {
 		char a = 'A'; // 65 //78
 		char z = 'Z'; // 90

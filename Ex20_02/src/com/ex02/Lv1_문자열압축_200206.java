@@ -1,5 +1,7 @@
 package com.ex02;
 
-public class Lv1_¹®ÀÚ¿­¾ĞÃà_200206 {
-
+public class Lv1_ë¬¸ìì—´ì••ì¶•_200206 {
+	public static void main(String[] args) {
+		
+	}
 }
