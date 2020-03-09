@@ -1,35 +1,35 @@
-package com.ex02;
 
-import java.util.Scanner;
+package com.ex02;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		for(int i=0;i<t;i++) {
-			int temp = sc.nextInt();
-			System.out.println(koong(temp));
-		}
-		sc.close();
-	}
+		Main ne = new Main();
+		ne.solution("1D2S#10S");
+		
 
+	}
+	// s,d,t 1,2,3
+	// * 앞것까지 2배 # -
+	public int solution(String dartResult) {
+	      int answer = 0;
+	      char[] dart = dartResult.toCharArray();
+	      int[] num= {0,0,0};
+	      int cnt = 0;
+	      int temp=0;
+	      for(int i=0;i<dart.length;i++) {
+	    	if(!Character.isDigit(dart[i])) {
+	    		num[cnt]=Integer.parseInt(dartResult.substring(temp, i));
+	    		temp = i;
+	    	}
+	    	     	  
+	      }
+	      System.out.println(""+num[0]+" , "+num[1]+" , "+num[2]);
+	      
+	      
+	      return answer;
+	  }
 	
-	private static long koong(int k) {
-
-		if(k<2) return 1;
-		else if(k==2) return 2;
-		else if(k==3) return 4;
-		long[] koo = new long[k+1];
-		koo[0] = 1;
-		koo[1] = 1;
-		koo[2] = 2;
-		koo[3] = 4;
-		for(int i=4;i<=k;i++) {
-			koo[i]=koo[i-1]+koo[i-2]+koo[i-3]+koo[i-4];
-
-		}
-		return koo[k];
-	}
+	
 }
 
 
